@@ -1,0 +1,1079 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9A1721EC20BF894500769204 /* eosioTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A1721EB20BF894500769204 /* eosioTests.m */; };
+		9A1721EE20BF894500769204 /* eosio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ACB933520BED1C400E24CEF /* eosio.framework */; };
+		9A1721F720BF8CE600769204 /* PrivateKeyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A1721F620BF8CE600769204 /* PrivateKeyTest.m */; };
+		9A1721F920BFA52900769204 /* TransactionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A1721F820BFA52900769204 /* TransactionTest.m */; };
+		9ACB933A20BED1C400E24CEF /* eosio.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB933820BED1C400E24CEF /* eosio.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9ACB936920BED28100E24CEF /* bench.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB934220BED28100E24CEF /* bench.h */; };
+		9ACB936A20BED28100E24CEF /* borromean.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB934320BED28100E24CEF /* borromean.h */; };
+		9ACB936B20BED28100E24CEF /* borromean_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB934420BED28100E24CEF /* borromean_impl.h */; };
+		9ACB936C20BED28100E24CEF /* ecdh.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB934520BED28100E24CEF /* ecdh.h */; };
+		9ACB936D20BED28100E24CEF /* ecdh_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB934620BED28100E24CEF /* ecdh_impl.h */; };
+		9ACB936E20BED28100E24CEF /* ecdsa_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB934720BED28100E24CEF /* ecdsa_impl.h */; };
+		9ACB936F20BED28100E24CEF /* ecdsa_zkp.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB934820BED28100E24CEF /* ecdsa_zkp.h */; };
+		9ACB937020BED28100E24CEF /* eckey_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB934920BED28100E24CEF /* eckey_impl.h */; };
+		9ACB937120BED28100E24CEF /* eckey_zkp.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB934A20BED28100E24CEF /* eckey_zkp.h */; };
+		9ACB937220BED28100E24CEF /* ecmult.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB934B20BED28100E24CEF /* ecmult.h */; };
+		9ACB937320BED28100E24CEF /* ecmult_gen.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB934C20BED28100E24CEF /* ecmult_gen.h */; };
+		9ACB937420BED28100E24CEF /* ecmult_gen_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB934D20BED28100E24CEF /* ecmult_gen_impl.h */; };
+		9ACB937520BED28100E24CEF /* ecmult_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB934E20BED28100E24CEF /* ecmult_impl.h */; };
+		9ACB937620BED28100E24CEF /* field.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB934F20BED28100E24CEF /* field.h */; };
+		9ACB937720BED28100E24CEF /* field_10x26.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB935020BED28100E24CEF /* field_10x26.h */; };
+		9ACB937820BED28100E24CEF /* field_10x26_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB935120BED28100E24CEF /* field_10x26_impl.h */; };
+		9ACB937920BED28100E24CEF /* field_5x52.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB935220BED28100E24CEF /* field_5x52.h */; };
+		9ACB937A20BED28100E24CEF /* field_5x52_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB935320BED28100E24CEF /* field_5x52_impl.h */; };
+		9ACB937B20BED28100E24CEF /* field_5x52_int128_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB935420BED28100E24CEF /* field_5x52_int128_impl.h */; };
+		9ACB937C20BED28100E24CEF /* field_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB935520BED28100E24CEF /* field_impl.h */; };
+		9ACB937D20BED28100E24CEF /* group.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB935620BED28100E24CEF /* group.h */; };
+		9ACB937E20BED28100E24CEF /* group_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB935720BED28100E24CEF /* group_impl.h */; };
+		9ACB937F20BED28100E24CEF /* hash.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB935820BED28100E24CEF /* hash.h */; };
+		9ACB938020BED28100E24CEF /* hash_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB935920BED28100E24CEF /* hash_impl.h */; };
+		9ACB938120BED28100E24CEF /* libsecp256k1-config.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB935A20BED28100E24CEF /* libsecp256k1-config.h */; };
+		9ACB938220BED28100E24CEF /* num.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB935B20BED28100E24CEF /* num.h */; };
+		9ACB938320BED28100E24CEF /* num_gmp.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB935C20BED28100E24CEF /* num_gmp.h */; };
+		9ACB938420BED28100E24CEF /* num_gmp_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB935D20BED28100E24CEF /* num_gmp_impl.h */; };
+		9ACB938520BED28100E24CEF /* num_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB935E20BED28100E24CEF /* num_impl.h */; };
+		9ACB938620BED28100E24CEF /* rangeproof.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB935F20BED28100E24CEF /* rangeproof.h */; };
+		9ACB938720BED28100E24CEF /* rangeproof_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB936020BED28100E24CEF /* rangeproof_impl.h */; };
+		9ACB938820BED28100E24CEF /* scalar.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB936120BED28100E24CEF /* scalar.h */; };
+		9ACB938920BED28100E24CEF /* scalar_8x32.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB936220BED28100E24CEF /* scalar_8x32.h */; };
+		9ACB938A20BED28100E24CEF /* scalar_8x32_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB936320BED28100E24CEF /* scalar_8x32_impl.h */; };
+		9ACB938B20BED28100E24CEF /* scalar_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB936420BED28100E24CEF /* scalar_impl.h */; };
+		9ACB938C20BED28100E24CEF /* secp256k1_zkp.c in Sources */ = {isa = PBXBuildFile; fileRef = 9ACB936520BED28100E24CEF /* secp256k1_zkp.c */; };
+		9ACB938D20BED28100E24CEF /* secp256k1_zkp.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB936620BED28100E24CEF /* secp256k1_zkp.h */; };
+		9ACB938F20BED28100E24CEF /* util.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB936820BED28100E24CEF /* util.h */; };
+		9ACB939A20BED36E00E24CEF /* ECKeySignature.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB939220BED36D00E24CEF /* ECKeySignature.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9ACB939B20BED36E00E24CEF /* ECKeySignature.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACB939320BED36D00E24CEF /* ECKeySignature.m */; };
+		9ACB939C20BED36E00E24CEF /* ChildNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACB939420BED36D00E24CEF /* ChildNumber.m */; };
+		9ACB939D20BED36E00E24CEF /* ECKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACB939520BED36D00E24CEF /* ECKey.m */; };
+		9ACB939E20BED36E00E24CEF /* ChildNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB939620BED36E00E24CEF /* ChildNumber.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9ACB939F20BED36E00E24CEF /* DeterministicKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB939720BED36E00E24CEF /* DeterministicKey.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9ACB93A020BED36E00E24CEF /* ECKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB939820BED36E00E24CEF /* ECKey.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9ACB93A120BED36E00E24CEF /* DeterministicKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACB939920BED36E00E24CEF /* DeterministicKey.m */; };
+		9ACB93AE20BED3B700E24CEF /* Categories.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB93A320BED3B700E24CEF /* Categories.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9ACB93AF20BED3B700E24CEF /* NSData+Extend.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB93A420BED3B700E24CEF /* NSData+Extend.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9ACB93B020BED3B700E24CEF /* NSData+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACB93A520BED3B700E24CEF /* NSData+Extend.m */; };
+		9ACB93B120BED3B700E24CEF /* NSData+Hash.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB93A620BED3B700E24CEF /* NSData+Hash.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9ACB93B220BED3B700E24CEF /* NSData+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACB93A720BED3B700E24CEF /* NSData+Hash.m */; };
+		9ACB93B320BED3B700E24CEF /* NSMutableData+Extend.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB93A820BED3B700E24CEF /* NSMutableData+Extend.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9ACB93B420BED3B700E24CEF /* NSMutableData+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACB93A920BED3B700E24CEF /* NSMutableData+Extend.m */; };
+		9ACB93B520BED3B700E24CEF /* NSString+Base58.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB93AA20BED3B700E24CEF /* NSString+Base58.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9ACB93B620BED3B700E24CEF /* NSString+Base58.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACB93AB20BED3B700E24CEF /* NSString+Base58.m */; };
+		9ACB93B720BED3B700E24CEF /* SHAHash.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB93AC20BED3B700E24CEF /* SHAHash.h */; };
+		9ACB93B820BED3B700E24CEF /* SHAHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACB93AD20BED3B700E24CEF /* SHAHash.m */; };
+		9ACB93C020BED44600E24CEF /* options.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB93B920BED44600E24CEF /* options.h */; };
+		9ACB93C120BED44600E24CEF /* sha2.c in Sources */ = {isa = PBXBuildFile; fileRef = 9ACB93BA20BED44600E24CEF /* sha2.c */; };
+		9ACB93C220BED44600E24CEF /* sha2.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB93BB20BED44600E24CEF /* sha2.h */; };
+		9ACB93C320BED44600E24CEF /* memzero.c in Sources */ = {isa = PBXBuildFile; fileRef = 9ACB93BC20BED44600E24CEF /* memzero.c */; };
+		9ACB93C420BED44600E24CEF /* hmac.c in Sources */ = {isa = PBXBuildFile; fileRef = 9ACB93BD20BED44600E24CEF /* hmac.c */; };
+		9ACB93C520BED44600E24CEF /* hmac.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB93BE20BED44600E24CEF /* hmac.h */; };
+		9ACB93C620BED44600E24CEF /* memzero.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB93BF20BED44600E24CEF /* memzero.h */; };
+		9ACB93CB20BED4E600E24CEF /* base58.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB93C720BED4E500E24CEF /* base58.h */; };
+		9ACB93CC20BED4E600E24CEF /* base58.c in Sources */ = {isa = PBXBuildFile; fileRef = 9ACB93C820BED4E500E24CEF /* base58.c */; };
+		9ACB93CD20BED4E600E24CEF /* ripemd160.c in Sources */ = {isa = PBXBuildFile; fileRef = 9ACB93C920BED4E600E24CEF /* ripemd160.c */; };
+		9ACB93CE20BED4E600E24CEF /* ripemd160.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB93CA20BED4E600E24CEF /* ripemd160.h */; };
+		9ACB93D120BED4FB00E24CEF /* hasher.c in Sources */ = {isa = PBXBuildFile; fileRef = 9ACB93CF20BED4FA00E24CEF /* hasher.c */; };
+		9ACB93D220BED4FB00E24CEF /* hasher.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB93D020BED4FB00E24CEF /* hasher.h */; };
+		9ACB93D520BED50900E24CEF /* blake256.c in Sources */ = {isa = PBXBuildFile; fileRef = 9ACB93D320BED50900E24CEF /* blake256.c */; };
+		9ACB93D620BED50900E24CEF /* blake256.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB93D420BED50900E24CEF /* blake256.h */; };
+		9ACB93DC20BED82A00E24CEF /* EosDeterministicKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB93D820BED82A00E24CEF /* EosDeterministicKey.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9ACB93DD20BED82A00E24CEF /* EosDeterministicKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACB93D920BED82A00E24CEF /* EosDeterministicKey.m */; };
+		9ACB93DE20BED82A00E24CEF /* EosECKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB93DA20BED82A00E24CEF /* EosECKey.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9ACB93DF20BED82A00E24CEF /* EosECKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACB93DB20BED82A00E24CEF /* EosECKey.m */; };
+		9ACB93E220BEDC6B00E24CEF /* bignum.c in Sources */ = {isa = PBXBuildFile; fileRef = 9ACB93E020BEDC6B00E24CEF /* bignum.c */; };
+		9ACB93E320BEDC6B00E24CEF /* bignum.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB93E120BEDC6B00E24CEF /* bignum.h */; };
+		9ACB93E620BEDC7C00E24CEF /* BigNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB93E420BEDC7B00E24CEF /* BigNumber.h */; };
+		9ACB93E720BEDC7C00E24CEF /* BigNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACB93E520BEDC7B00E24CEF /* BigNumber.m */; };
+		9ACB93EE20BEDD9800E24CEF /* secp256k1.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB93EC20BEDD9800E24CEF /* secp256k1.h */; };
+		9ACB93EF20BEDD9800E24CEF /* secp256k1.c in Sources */ = {isa = PBXBuildFile; fileRef = 9ACB93ED20BEDD9800E24CEF /* secp256k1.c */; };
+		9ACB93F120BEDDD800E24CEF /* secp256k1.table in Resources */ = {isa = PBXBuildFile; fileRef = 9ACB93F020BEDDD700E24CEF /* secp256k1.table */; };
+		9ACB93F420BEDE2B00E24CEF /* ecdsa.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB93F220BEDE2A00E24CEF /* ecdsa.h */; };
+		9ACB93F520BEDE2B00E24CEF /* ecdsa.c in Sources */ = {isa = PBXBuildFile; fileRef = 9ACB93F320BEDE2A00E24CEF /* ecdsa.c */; };
+		9ACB93F820BEDE4D00E24CEF /* rand.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB93F620BEDE4D00E24CEF /* rand.h */; };
+		9ACB93F920BEDE4D00E24CEF /* rand.c in Sources */ = {isa = PBXBuildFile; fileRef = 9ACB93F720BEDE4D00E24CEF /* rand.c */; };
+		9ACB93FB20BEDE6C00E24CEF /* rfc6979.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB93FA20BEDE6C00E24CEF /* rfc6979.h */; };
+		9ACB942520BEDEBE00E24CEF /* EOSAccountName.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB93FD20BEDEBE00E24CEF /* EOSAccountName.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9ACB942620BEDEBE00E24CEF /* EOSAccountName.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACB93FE20BEDEBE00E24CEF /* EOSAccountName.m */; };
+		9ACB942720BEDEBE00E24CEF /* EOSAccountPermission.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB93FF20BEDEBE00E24CEF /* EOSAccountPermission.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9ACB942820BEDEBE00E24CEF /* EOSAccountPermission.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACB940020BEDEBE00E24CEF /* EOSAccountPermission.m */; };
+		9ACB942920BEDEBE00E24CEF /* EOSAccountPermissionWeight.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB940120BEDEBE00E24CEF /* EOSAccountPermissionWeight.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9ACB942A20BEDEBE00E24CEF /* EOSAccountPermissionWeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACB940220BEDEBE00E24CEF /* EOSAccountPermissionWeight.m */; };
+		9ACB942B20BEDEBE00E24CEF /* EOSAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB940320BEDEBE00E24CEF /* EOSAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9ACB942C20BEDEBE00E24CEF /* EOSAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACB940420BEDEBE00E24CEF /* EOSAction.m */; };
+		9ACB942D20BEDEBE00E24CEF /* EOSAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB940520BEDEBE00E24CEF /* EOSAddress.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9ACB942E20BEDEBE00E24CEF /* EOSAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACB940620BEDEBE00E24CEF /* EOSAddress.m */; };
+		9ACB942F20BEDEBE00E24CEF /* EOSAuthority.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB940720BEDEBE00E24CEF /* EOSAuthority.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9ACB943020BEDEBE00E24CEF /* EOSAuthority.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACB940820BEDEBE00E24CEF /* EOSAuthority.m */; };
+		9ACB943120BEDEBE00E24CEF /* EOSKeyPermissionWeight.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB940920BEDEBE00E24CEF /* EOSKeyPermissionWeight.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9ACB943220BEDEBE00E24CEF /* EOSKeyPermissionWeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACB940A20BEDEBE00E24CEF /* EOSKeyPermissionWeight.m */; };
+		9ACB943320BEDEBE00E24CEF /* EOSTransaction.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB940B20BEDEBE00E24CEF /* EOSTransaction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9ACB943420BEDEBE00E24CEF /* EOSTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACB940C20BEDEBE00E24CEF /* EOSTransaction.m */; };
+		9ACB943520BEDEBE00E24CEF /* EOSWaitWeight.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB940D20BEDEBE00E24CEF /* EOSWaitWeight.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9ACB943620BEDEBE00E24CEF /* EOSWaitWeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACB940E20BEDEBE00E24CEF /* EOSWaitWeight.m */; };
+		9ACB943720BEDEBE00E24CEF /* EOSAsset.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB941020BEDEBE00E24CEF /* EOSAsset.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9ACB943820BEDEBE00E24CEF /* EOSAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACB941120BEDEBE00E24CEF /* EOSAsset.m */; };
+		9ACB943920BEDEBE00E24CEF /* EOSBuyRamMessageData.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB941220BEDEBE00E24CEF /* EOSBuyRamMessageData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9ACB943A20BEDEBE00E24CEF /* EOSBuyRamMessageData.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACB941320BEDEBE00E24CEF /* EOSBuyRamMessageData.m */; };
+		9ACB943B20BEDEBE00E24CEF /* EOSByteMessageData.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB941420BEDEBE00E24CEF /* EOSByteMessageData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9ACB943C20BEDEBE00E24CEF /* EOSByteMessageData.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACB941520BEDEBE00E24CEF /* EOSByteMessageData.m */; };
+		9ACB943D20BEDEBE00E24CEF /* EOSDelegatebwMessageData.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB941620BEDEBE00E24CEF /* EOSDelegatebwMessageData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9ACB943E20BEDEBE00E24CEF /* EOSDelegatebwMessageData.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACB941720BEDEBE00E24CEF /* EOSDelegatebwMessageData.m */; };
+		9ACB943F20BEDEBE00E24CEF /* EOSMessageData.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB941820BEDEBE00E24CEF /* EOSMessageData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9ACB944020BEDEBE00E24CEF /* EOSNewMessageData.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB941920BEDEBE00E24CEF /* EOSNewMessageData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9ACB944120BEDEBE00E24CEF /* EOSNewMessageData.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACB941A20BEDEBE00E24CEF /* EOSNewMessageData.m */; };
+		9ACB944220BEDEBE00E24CEF /* EOSRegProxyMessageData.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB941B20BEDEBE00E24CEF /* EOSRegProxyMessageData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9ACB944320BEDEBE00E24CEF /* EOSRegProxyMessageData.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACB941C20BEDEBE00E24CEF /* EOSRegProxyMessageData.m */; };
+		9ACB944420BEDEBE00E24CEF /* EOSSellRamMessageData.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB941D20BEDEBE00E24CEF /* EOSSellRamMessageData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9ACB944520BEDEBE00E24CEF /* EOSSellRamMessageData.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACB941E20BEDEBE00E24CEF /* EOSSellRamMessageData.m */; };
+		9ACB944620BEDEBE00E24CEF /* EOSTxMessageData.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB941F20BEDEBE00E24CEF /* EOSTxMessageData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9ACB944720BEDEBE00E24CEF /* EOSTxMessageData.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACB942020BEDEBE00E24CEF /* EOSTxMessageData.m */; };
+		9ACB944820BEDEBE00E24CEF /* EOSUnDelegatebwMessageData.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB942120BEDEBE00E24CEF /* EOSUnDelegatebwMessageData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9ACB944920BEDEBE00E24CEF /* EOSUnDelegatebwMessageData.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACB942220BEDEBE00E24CEF /* EOSUnDelegatebwMessageData.m */; };
+		9ACB944A20BEDEBE00E24CEF /* EOSVoteProducerMessageData.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB942320BEDEBE00E24CEF /* EOSVoteProducerMessageData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9ACB944B20BEDEBE00E24CEF /* EOSVoteProducerMessageData.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACB942420BEDEBE00E24CEF /* EOSVoteProducerMessageData.m */; };
+		9ACB944F20BEDF0100E24CEF /* MnemonicCode.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB944C20BEDF0100E24CEF /* MnemonicCode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9ACB945020BEDF0100E24CEF /* CoinFamily.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB944D20BEDF0100E24CEF /* CoinFamily.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9ACB945120BEDF0100E24CEF /* MnemonicCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACB944E20BEDF0100E24CEF /* MnemonicCode.m */; };
+		9ACB945420BEDF3700E24CEF /* pbkdf2.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB945220BEDF3700E24CEF /* pbkdf2.h */; };
+		9ACB945520BEDF3700E24CEF /* pbkdf2.c in Sources */ = {isa = PBXBuildFile; fileRef = 9ACB945320BEDF3700E24CEF /* pbkdf2.c */; };
+		9ACB945820BEDF5E00E24CEF /* bip39.c in Sources */ = {isa = PBXBuildFile; fileRef = 9ACB945620BEDF5E00E24CEF /* bip39.c */; };
+		9ACB945920BEDF5E00E24CEF /* bip39.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACB945720BEDF5E00E24CEF /* bip39.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9A1721EF20BF894500769204 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ACB932C20BED1C400E24CEF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9ACB933420BED1C400E24CEF;
+			remoteInfo = eosio;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9A1721E920BF894500769204 /* eosioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eosioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A1721EB20BF894500769204 /* eosioTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = eosioTests.m; sourceTree = "<group>"; };
+		9A1721ED20BF894500769204 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A1721F620BF8CE600769204 /* PrivateKeyTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrivateKeyTest.m; sourceTree = "<group>"; };
+		9A1721F820BFA52900769204 /* TransactionTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransactionTest.m; sourceTree = "<group>"; };
+		9ACB933520BED1C400E24CEF /* eosio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = eosio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9ACB933820BED1C400E24CEF /* eosio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = eosio.h; sourceTree = "<group>"; };
+		9ACB933920BED1C400E24CEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9ACB934220BED28100E24CEF /* bench.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bench.h; sourceTree = "<group>"; };
+		9ACB934320BED28100E24CEF /* borromean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = borromean.h; sourceTree = "<group>"; };
+		9ACB934420BED28100E24CEF /* borromean_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = borromean_impl.h; sourceTree = "<group>"; };
+		9ACB934520BED28100E24CEF /* ecdh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ecdh.h; sourceTree = "<group>"; };
+		9ACB934620BED28100E24CEF /* ecdh_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ecdh_impl.h; sourceTree = "<group>"; };
+		9ACB934720BED28100E24CEF /* ecdsa_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ecdsa_impl.h; sourceTree = "<group>"; };
+		9ACB934820BED28100E24CEF /* ecdsa_zkp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ecdsa_zkp.h; sourceTree = "<group>"; };
+		9ACB934920BED28100E24CEF /* eckey_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eckey_impl.h; sourceTree = "<group>"; };
+		9ACB934A20BED28100E24CEF /* eckey_zkp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eckey_zkp.h; sourceTree = "<group>"; };
+		9ACB934B20BED28100E24CEF /* ecmult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ecmult.h; sourceTree = "<group>"; };
+		9ACB934C20BED28100E24CEF /* ecmult_gen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ecmult_gen.h; sourceTree = "<group>"; };
+		9ACB934D20BED28100E24CEF /* ecmult_gen_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ecmult_gen_impl.h; sourceTree = "<group>"; };
+		9ACB934E20BED28100E24CEF /* ecmult_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ecmult_impl.h; sourceTree = "<group>"; };
+		9ACB934F20BED28100E24CEF /* field.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = field.h; sourceTree = "<group>"; };
+		9ACB935020BED28100E24CEF /* field_10x26.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = field_10x26.h; sourceTree = "<group>"; };
+		9ACB935120BED28100E24CEF /* field_10x26_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = field_10x26_impl.h; sourceTree = "<group>"; };
+		9ACB935220BED28100E24CEF /* field_5x52.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = field_5x52.h; sourceTree = "<group>"; };
+		9ACB935320BED28100E24CEF /* field_5x52_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = field_5x52_impl.h; sourceTree = "<group>"; };
+		9ACB935420BED28100E24CEF /* field_5x52_int128_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = field_5x52_int128_impl.h; sourceTree = "<group>"; };
+		9ACB935520BED28100E24CEF /* field_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = field_impl.h; sourceTree = "<group>"; };
+		9ACB935620BED28100E24CEF /* group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = group.h; sourceTree = "<group>"; };
+		9ACB935720BED28100E24CEF /* group_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = group_impl.h; sourceTree = "<group>"; };
+		9ACB935820BED28100E24CEF /* hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hash.h; sourceTree = "<group>"; };
+		9ACB935920BED28100E24CEF /* hash_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hash_impl.h; sourceTree = "<group>"; };
+		9ACB935A20BED28100E24CEF /* libsecp256k1-config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "libsecp256k1-config.h"; sourceTree = "<group>"; };
+		9ACB935B20BED28100E24CEF /* num.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = num.h; sourceTree = "<group>"; };
+		9ACB935C20BED28100E24CEF /* num_gmp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = num_gmp.h; sourceTree = "<group>"; };
+		9ACB935D20BED28100E24CEF /* num_gmp_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = num_gmp_impl.h; sourceTree = "<group>"; };
+		9ACB935E20BED28100E24CEF /* num_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = num_impl.h; sourceTree = "<group>"; };
+		9ACB935F20BED28100E24CEF /* rangeproof.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rangeproof.h; sourceTree = "<group>"; };
+		9ACB936020BED28100E24CEF /* rangeproof_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rangeproof_impl.h; sourceTree = "<group>"; };
+		9ACB936120BED28100E24CEF /* scalar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scalar.h; sourceTree = "<group>"; };
+		9ACB936220BED28100E24CEF /* scalar_8x32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scalar_8x32.h; sourceTree = "<group>"; };
+		9ACB936320BED28100E24CEF /* scalar_8x32_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scalar_8x32_impl.h; sourceTree = "<group>"; };
+		9ACB936420BED28100E24CEF /* scalar_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scalar_impl.h; sourceTree = "<group>"; };
+		9ACB936520BED28100E24CEF /* secp256k1_zkp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = secp256k1_zkp.c; sourceTree = "<group>"; };
+		9ACB936620BED28100E24CEF /* secp256k1_zkp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = secp256k1_zkp.h; sourceTree = "<group>"; };
+		9ACB936820BED28100E24CEF /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
+		9ACB939220BED36D00E24CEF /* ECKeySignature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECKeySignature.h; sourceTree = "<group>"; };
+		9ACB939320BED36D00E24CEF /* ECKeySignature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECKeySignature.m; sourceTree = "<group>"; };
+		9ACB939420BED36D00E24CEF /* ChildNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildNumber.m; sourceTree = "<group>"; };
+		9ACB939520BED36D00E24CEF /* ECKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECKey.m; sourceTree = "<group>"; };
+		9ACB939620BED36E00E24CEF /* ChildNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildNumber.h; sourceTree = "<group>"; };
+		9ACB939720BED36E00E24CEF /* DeterministicKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeterministicKey.h; sourceTree = "<group>"; };
+		9ACB939820BED36E00E24CEF /* ECKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECKey.h; sourceTree = "<group>"; };
+		9ACB939920BED36E00E24CEF /* DeterministicKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeterministicKey.m; sourceTree = "<group>"; };
+		9ACB93A320BED3B700E24CEF /* Categories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Categories.h; sourceTree = "<group>"; };
+		9ACB93A420BED3B700E24CEF /* NSData+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Extend.h"; sourceTree = "<group>"; };
+		9ACB93A520BED3B700E24CEF /* NSData+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Extend.m"; sourceTree = "<group>"; };
+		9ACB93A620BED3B700E24CEF /* NSData+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Hash.h"; sourceTree = "<group>"; };
+		9ACB93A720BED3B700E24CEF /* NSData+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Hash.m"; sourceTree = "<group>"; };
+		9ACB93A820BED3B700E24CEF /* NSMutableData+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableData+Extend.h"; sourceTree = "<group>"; };
+		9ACB93A920BED3B700E24CEF /* NSMutableData+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableData+Extend.m"; sourceTree = "<group>"; };
+		9ACB93AA20BED3B700E24CEF /* NSString+Base58.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base58.h"; sourceTree = "<group>"; };
+		9ACB93AB20BED3B700E24CEF /* NSString+Base58.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base58.m"; sourceTree = "<group>"; };
+		9ACB93AC20BED3B700E24CEF /* SHAHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHAHash.h; sourceTree = "<group>"; };
+		9ACB93AD20BED3B700E24CEF /* SHAHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHAHash.m; sourceTree = "<group>"; };
+		9ACB93B920BED44600E24CEF /* options.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = options.h; sourceTree = "<group>"; };
+		9ACB93BA20BED44600E24CEF /* sha2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sha2.c; sourceTree = "<group>"; };
+		9ACB93BB20BED44600E24CEF /* sha2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha2.h; sourceTree = "<group>"; };
+		9ACB93BC20BED44600E24CEF /* memzero.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = memzero.c; sourceTree = "<group>"; };
+		9ACB93BD20BED44600E24CEF /* hmac.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hmac.c; sourceTree = "<group>"; };
+		9ACB93BE20BED44600E24CEF /* hmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hmac.h; sourceTree = "<group>"; };
+		9ACB93BF20BED44600E24CEF /* memzero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = memzero.h; sourceTree = "<group>"; };
+		9ACB93C720BED4E500E24CEF /* base58.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base58.h; sourceTree = "<group>"; };
+		9ACB93C820BED4E500E24CEF /* base58.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = base58.c; sourceTree = "<group>"; };
+		9ACB93C920BED4E600E24CEF /* ripemd160.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ripemd160.c; sourceTree = "<group>"; };
+		9ACB93CA20BED4E600E24CEF /* ripemd160.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ripemd160.h; sourceTree = "<group>"; };
+		9ACB93CF20BED4FA00E24CEF /* hasher.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hasher.c; sourceTree = "<group>"; };
+		9ACB93D020BED4FB00E24CEF /* hasher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hasher.h; sourceTree = "<group>"; };
+		9ACB93D320BED50900E24CEF /* blake256.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = blake256.c; sourceTree = "<group>"; };
+		9ACB93D420BED50900E24CEF /* blake256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = blake256.h; sourceTree = "<group>"; };
+		9ACB93D820BED82A00E24CEF /* EosDeterministicKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EosDeterministicKey.h; sourceTree = "<group>"; };
+		9ACB93D920BED82A00E24CEF /* EosDeterministicKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EosDeterministicKey.m; sourceTree = "<group>"; };
+		9ACB93DA20BED82A00E24CEF /* EosECKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EosECKey.h; sourceTree = "<group>"; };
+		9ACB93DB20BED82A00E24CEF /* EosECKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EosECKey.m; sourceTree = "<group>"; };
+		9ACB93E020BEDC6B00E24CEF /* bignum.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bignum.c; sourceTree = "<group>"; };
+		9ACB93E120BEDC6B00E24CEF /* bignum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bignum.h; sourceTree = "<group>"; };
+		9ACB93E420BEDC7B00E24CEF /* BigNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BigNumber.h; sourceTree = "<group>"; };
+		9ACB93E520BEDC7B00E24CEF /* BigNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BigNumber.m; sourceTree = "<group>"; };
+		9ACB93EC20BEDD9800E24CEF /* secp256k1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = secp256k1.h; sourceTree = "<group>"; };
+		9ACB93ED20BEDD9800E24CEF /* secp256k1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = secp256k1.c; sourceTree = "<group>"; };
+		9ACB93F020BEDDD700E24CEF /* secp256k1.table */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = secp256k1.table; sourceTree = "<group>"; };
+		9ACB93F220BEDE2A00E24CEF /* ecdsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ecdsa.h; sourceTree = "<group>"; };
+		9ACB93F320BEDE2A00E24CEF /* ecdsa.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ecdsa.c; sourceTree = "<group>"; };
+		9ACB93F620BEDE4D00E24CEF /* rand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rand.h; sourceTree = "<group>"; };
+		9ACB93F720BEDE4D00E24CEF /* rand.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rand.c; sourceTree = "<group>"; };
+		9ACB93FA20BEDE6C00E24CEF /* rfc6979.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rfc6979.h; sourceTree = "<group>"; };
+		9ACB93FD20BEDEBE00E24CEF /* EOSAccountName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EOSAccountName.h; sourceTree = "<group>"; };
+		9ACB93FE20BEDEBE00E24CEF /* EOSAccountName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EOSAccountName.m; sourceTree = "<group>"; };
+		9ACB93FF20BEDEBE00E24CEF /* EOSAccountPermission.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EOSAccountPermission.h; sourceTree = "<group>"; };
+		9ACB940020BEDEBE00E24CEF /* EOSAccountPermission.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EOSAccountPermission.m; sourceTree = "<group>"; };
+		9ACB940120BEDEBE00E24CEF /* EOSAccountPermissionWeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EOSAccountPermissionWeight.h; sourceTree = "<group>"; };
+		9ACB940220BEDEBE00E24CEF /* EOSAccountPermissionWeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EOSAccountPermissionWeight.m; sourceTree = "<group>"; };
+		9ACB940320BEDEBE00E24CEF /* EOSAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EOSAction.h; sourceTree = "<group>"; };
+		9ACB940420BEDEBE00E24CEF /* EOSAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EOSAction.m; sourceTree = "<group>"; };
+		9ACB940520BEDEBE00E24CEF /* EOSAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EOSAddress.h; sourceTree = "<group>"; };
+		9ACB940620BEDEBE00E24CEF /* EOSAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EOSAddress.m; sourceTree = "<group>"; };
+		9ACB940720BEDEBE00E24CEF /* EOSAuthority.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EOSAuthority.h; sourceTree = "<group>"; };
+		9ACB940820BEDEBE00E24CEF /* EOSAuthority.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EOSAuthority.m; sourceTree = "<group>"; };
+		9ACB940920BEDEBE00E24CEF /* EOSKeyPermissionWeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EOSKeyPermissionWeight.h; sourceTree = "<group>"; };
+		9ACB940A20BEDEBE00E24CEF /* EOSKeyPermissionWeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EOSKeyPermissionWeight.m; sourceTree = "<group>"; };
+		9ACB940B20BEDEBE00E24CEF /* EOSTransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EOSTransaction.h; sourceTree = "<group>"; };
+		9ACB940C20BEDEBE00E24CEF /* EOSTransaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EOSTransaction.m; sourceTree = "<group>"; };
+		9ACB940D20BEDEBE00E24CEF /* EOSWaitWeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EOSWaitWeight.h; sourceTree = "<group>"; };
+		9ACB940E20BEDEBE00E24CEF /* EOSWaitWeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EOSWaitWeight.m; sourceTree = "<group>"; };
+		9ACB941020BEDEBE00E24CEF /* EOSAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EOSAsset.h; sourceTree = "<group>"; };
+		9ACB941120BEDEBE00E24CEF /* EOSAsset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EOSAsset.m; sourceTree = "<group>"; };
+		9ACB941220BEDEBE00E24CEF /* EOSBuyRamMessageData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EOSBuyRamMessageData.h; sourceTree = "<group>"; };
+		9ACB941320BEDEBE00E24CEF /* EOSBuyRamMessageData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EOSBuyRamMessageData.m; sourceTree = "<group>"; };
+		9ACB941420BEDEBE00E24CEF /* EOSByteMessageData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EOSByteMessageData.h; sourceTree = "<group>"; };
+		9ACB941520BEDEBE00E24CEF /* EOSByteMessageData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EOSByteMessageData.m; sourceTree = "<group>"; };
+		9ACB941620BEDEBE00E24CEF /* EOSDelegatebwMessageData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EOSDelegatebwMessageData.h; sourceTree = "<group>"; };
+		9ACB941720BEDEBE00E24CEF /* EOSDelegatebwMessageData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EOSDelegatebwMessageData.m; sourceTree = "<group>"; };
+		9ACB941820BEDEBE00E24CEF /* EOSMessageData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EOSMessageData.h; sourceTree = "<group>"; };
+		9ACB941920BEDEBE00E24CEF /* EOSNewMessageData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EOSNewMessageData.h; sourceTree = "<group>"; };
+		9ACB941A20BEDEBE00E24CEF /* EOSNewMessageData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EOSNewMessageData.m; sourceTree = "<group>"; };
+		9ACB941B20BEDEBE00E24CEF /* EOSRegProxyMessageData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EOSRegProxyMessageData.h; sourceTree = "<group>"; };
+		9ACB941C20BEDEBE00E24CEF /* EOSRegProxyMessageData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EOSRegProxyMessageData.m; sourceTree = "<group>"; };
+		9ACB941D20BEDEBE00E24CEF /* EOSSellRamMessageData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EOSSellRamMessageData.h; sourceTree = "<group>"; };
+		9ACB941E20BEDEBE00E24CEF /* EOSSellRamMessageData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EOSSellRamMessageData.m; sourceTree = "<group>"; };
+		9ACB941F20BEDEBE00E24CEF /* EOSTxMessageData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EOSTxMessageData.h; sourceTree = "<group>"; };
+		9ACB942020BEDEBE00E24CEF /* EOSTxMessageData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EOSTxMessageData.m; sourceTree = "<group>"; };
+		9ACB942120BEDEBE00E24CEF /* EOSUnDelegatebwMessageData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EOSUnDelegatebwMessageData.h; sourceTree = "<group>"; };
+		9ACB942220BEDEBE00E24CEF /* EOSUnDelegatebwMessageData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EOSUnDelegatebwMessageData.m; sourceTree = "<group>"; };
+		9ACB942320BEDEBE00E24CEF /* EOSVoteProducerMessageData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EOSVoteProducerMessageData.h; sourceTree = "<group>"; };
+		9ACB942420BEDEBE00E24CEF /* EOSVoteProducerMessageData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EOSVoteProducerMessageData.m; sourceTree = "<group>"; };
+		9ACB944C20BEDF0100E24CEF /* MnemonicCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MnemonicCode.h; sourceTree = "<group>"; };
+		9ACB944D20BEDF0100E24CEF /* CoinFamily.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoinFamily.h; sourceTree = "<group>"; };
+		9ACB944E20BEDF0100E24CEF /* MnemonicCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MnemonicCode.m; sourceTree = "<group>"; };
+		9ACB945220BEDF3700E24CEF /* pbkdf2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pbkdf2.h; sourceTree = "<group>"; };
+		9ACB945320BEDF3700E24CEF /* pbkdf2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pbkdf2.c; sourceTree = "<group>"; };
+		9ACB945620BEDF5E00E24CEF /* bip39.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bip39.c; sourceTree = "<group>"; };
+		9ACB945720BEDF5E00E24CEF /* bip39.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bip39.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9A1721E620BF894500769204 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A1721EE20BF894500769204 /* eosio.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9ACB933120BED1C400E24CEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9A1721EA20BF894500769204 /* eosioTests */ = {
+			isa = PBXGroup;
+			children = (
+				9A1721EB20BF894500769204 /* eosioTests.m */,
+				9A1721F620BF8CE600769204 /* PrivateKeyTest.m */,
+				9A1721F820BFA52900769204 /* TransactionTest.m */,
+				9A1721ED20BF894500769204 /* Info.plist */,
+			);
+			path = eosioTests;
+			sourceTree = "<group>";
+		};
+		9ACB932B20BED1C400E24CEF = {
+			isa = PBXGroup;
+			children = (
+				9ACB933720BED1C400E24CEF /* eosio */,
+				9A1721EA20BF894500769204 /* eosioTests */,
+				9ACB933620BED1C400E24CEF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9ACB933620BED1C400E24CEF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9ACB933520BED1C400E24CEF /* eosio.framework */,
+				9A1721E920BF894500769204 /* eosioTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9ACB933720BED1C400E24CEF /* eosio */ = {
+			isa = PBXGroup;
+			children = (
+				9ACB934020BED27900E24CEF /* crypto */,
+				9ACB93A220BED3B700E24CEF /* Categories */,
+				9ACB939020BED35100E24CEF /* Coins */,
+				9ACB933820BED1C400E24CEF /* eosio.h */,
+				9ACB933920BED1C400E24CEF /* Info.plist */,
+			);
+			path = eosio;
+			sourceTree = "<group>";
+		};
+		9ACB934020BED27900E24CEF /* crypto */ = {
+			isa = PBXGroup;
+			children = (
+				9ACB934120BED28100E24CEF /* secp256k1_zkp */,
+				9ACB93BD20BED44600E24CEF /* hmac.c */,
+				9ACB93BE20BED44600E24CEF /* hmac.h */,
+				9ACB93BC20BED44600E24CEF /* memzero.c */,
+				9ACB93BF20BED44600E24CEF /* memzero.h */,
+				9ACB93B920BED44600E24CEF /* options.h */,
+				9ACB93BA20BED44600E24CEF /* sha2.c */,
+				9ACB93BB20BED44600E24CEF /* sha2.h */,
+				9ACB93C820BED4E500E24CEF /* base58.c */,
+				9ACB93C720BED4E500E24CEF /* base58.h */,
+				9ACB93C920BED4E600E24CEF /* ripemd160.c */,
+				9ACB93CA20BED4E600E24CEF /* ripemd160.h */,
+				9ACB93CF20BED4FA00E24CEF /* hasher.c */,
+				9ACB93D020BED4FB00E24CEF /* hasher.h */,
+				9ACB93D320BED50900E24CEF /* blake256.c */,
+				9ACB93D420BED50900E24CEF /* blake256.h */,
+				9ACB93E020BEDC6B00E24CEF /* bignum.c */,
+				9ACB93E120BEDC6B00E24CEF /* bignum.h */,
+				9ACB93ED20BEDD9800E24CEF /* secp256k1.c */,
+				9ACB93EC20BEDD9800E24CEF /* secp256k1.h */,
+				9ACB93F020BEDDD700E24CEF /* secp256k1.table */,
+				9ACB93F320BEDE2A00E24CEF /* ecdsa.c */,
+				9ACB93F220BEDE2A00E24CEF /* ecdsa.h */,
+				9ACB93F720BEDE4D00E24CEF /* rand.c */,
+				9ACB93F620BEDE4D00E24CEF /* rand.h */,
+				9ACB93FA20BEDE6C00E24CEF /* rfc6979.h */,
+				9ACB945320BEDF3700E24CEF /* pbkdf2.c */,
+				9ACB945220BEDF3700E24CEF /* pbkdf2.h */,
+				9ACB945620BEDF5E00E24CEF /* bip39.c */,
+				9ACB945720BEDF5E00E24CEF /* bip39.h */,
+			);
+			path = crypto;
+			sourceTree = "<group>";
+		};
+		9ACB934120BED28100E24CEF /* secp256k1_zkp */ = {
+			isa = PBXGroup;
+			children = (
+				9ACB934220BED28100E24CEF /* bench.h */,
+				9ACB934320BED28100E24CEF /* borromean.h */,
+				9ACB934420BED28100E24CEF /* borromean_impl.h */,
+				9ACB934520BED28100E24CEF /* ecdh.h */,
+				9ACB934620BED28100E24CEF /* ecdh_impl.h */,
+				9ACB934720BED28100E24CEF /* ecdsa_impl.h */,
+				9ACB934820BED28100E24CEF /* ecdsa_zkp.h */,
+				9ACB934920BED28100E24CEF /* eckey_impl.h */,
+				9ACB934A20BED28100E24CEF /* eckey_zkp.h */,
+				9ACB934B20BED28100E24CEF /* ecmult.h */,
+				9ACB934C20BED28100E24CEF /* ecmult_gen.h */,
+				9ACB934D20BED28100E24CEF /* ecmult_gen_impl.h */,
+				9ACB934E20BED28100E24CEF /* ecmult_impl.h */,
+				9ACB934F20BED28100E24CEF /* field.h */,
+				9ACB935020BED28100E24CEF /* field_10x26.h */,
+				9ACB935120BED28100E24CEF /* field_10x26_impl.h */,
+				9ACB935220BED28100E24CEF /* field_5x52.h */,
+				9ACB935320BED28100E24CEF /* field_5x52_impl.h */,
+				9ACB935420BED28100E24CEF /* field_5x52_int128_impl.h */,
+				9ACB935520BED28100E24CEF /* field_impl.h */,
+				9ACB935620BED28100E24CEF /* group.h */,
+				9ACB935720BED28100E24CEF /* group_impl.h */,
+				9ACB935820BED28100E24CEF /* hash.h */,
+				9ACB935920BED28100E24CEF /* hash_impl.h */,
+				9ACB935A20BED28100E24CEF /* libsecp256k1-config.h */,
+				9ACB935B20BED28100E24CEF /* num.h */,
+				9ACB935C20BED28100E24CEF /* num_gmp.h */,
+				9ACB935D20BED28100E24CEF /* num_gmp_impl.h */,
+				9ACB935E20BED28100E24CEF /* num_impl.h */,
+				9ACB935F20BED28100E24CEF /* rangeproof.h */,
+				9ACB936020BED28100E24CEF /* rangeproof_impl.h */,
+				9ACB936120BED28100E24CEF /* scalar.h */,
+				9ACB936220BED28100E24CEF /* scalar_8x32.h */,
+				9ACB936320BED28100E24CEF /* scalar_8x32_impl.h */,
+				9ACB936420BED28100E24CEF /* scalar_impl.h */,
+				9ACB936520BED28100E24CEF /* secp256k1_zkp.c */,
+				9ACB936620BED28100E24CEF /* secp256k1_zkp.h */,
+				9ACB936820BED28100E24CEF /* util.h */,
+			);
+			path = secp256k1_zkp;
+			sourceTree = "<group>";
+		};
+		9ACB939020BED35100E24CEF /* Coins */ = {
+			isa = PBXGroup;
+			children = (
+				9ACB939120BED35B00E24CEF /* Core */,
+				9ACB93FC20BEDEBE00E24CEF /* EOS */,
+				9ACB944D20BEDF0100E24CEF /* CoinFamily.h */,
+				9ACB944C20BEDF0100E24CEF /* MnemonicCode.h */,
+				9ACB944E20BEDF0100E24CEF /* MnemonicCode.m */,
+			);
+			path = Coins;
+			sourceTree = "<group>";
+		};
+		9ACB939120BED35B00E24CEF /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				9ACB93D720BED82A00E24CEF /* Eos */,
+				9ACB939620BED36E00E24CEF /* ChildNumber.h */,
+				9ACB939420BED36D00E24CEF /* ChildNumber.m */,
+				9ACB939720BED36E00E24CEF /* DeterministicKey.h */,
+				9ACB939920BED36E00E24CEF /* DeterministicKey.m */,
+				9ACB939820BED36E00E24CEF /* ECKey.h */,
+				9ACB939520BED36D00E24CEF /* ECKey.m */,
+				9ACB939220BED36D00E24CEF /* ECKeySignature.h */,
+				9ACB939320BED36D00E24CEF /* ECKeySignature.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		9ACB93A220BED3B700E24CEF /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				9ACB93A320BED3B700E24CEF /* Categories.h */,
+				9ACB93A420BED3B700E24CEF /* NSData+Extend.h */,
+				9ACB93A520BED3B700E24CEF /* NSData+Extend.m */,
+				9ACB93A620BED3B700E24CEF /* NSData+Hash.h */,
+				9ACB93A720BED3B700E24CEF /* NSData+Hash.m */,
+				9ACB93A820BED3B700E24CEF /* NSMutableData+Extend.h */,
+				9ACB93A920BED3B700E24CEF /* NSMutableData+Extend.m */,
+				9ACB93AA20BED3B700E24CEF /* NSString+Base58.h */,
+				9ACB93AB20BED3B700E24CEF /* NSString+Base58.m */,
+				9ACB93AC20BED3B700E24CEF /* SHAHash.h */,
+				9ACB93AD20BED3B700E24CEF /* SHAHash.m */,
+				9ACB93E420BEDC7B00E24CEF /* BigNumber.h */,
+				9ACB93E520BEDC7B00E24CEF /* BigNumber.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		9ACB93D720BED82A00E24CEF /* Eos */ = {
+			isa = PBXGroup;
+			children = (
+				9ACB93D820BED82A00E24CEF /* EosDeterministicKey.h */,
+				9ACB93D920BED82A00E24CEF /* EosDeterministicKey.m */,
+				9ACB93DA20BED82A00E24CEF /* EosECKey.h */,
+				9ACB93DB20BED82A00E24CEF /* EosECKey.m */,
+			);
+			path = Eos;
+			sourceTree = "<group>";
+		};
+		9ACB93FC20BEDEBE00E24CEF /* EOS */ = {
+			isa = PBXGroup;
+			children = (
+				9ACB940F20BEDEBE00E24CEF /* Message */,
+				9ACB93FD20BEDEBE00E24CEF /* EOSAccountName.h */,
+				9ACB93FE20BEDEBE00E24CEF /* EOSAccountName.m */,
+				9ACB93FF20BEDEBE00E24CEF /* EOSAccountPermission.h */,
+				9ACB940020BEDEBE00E24CEF /* EOSAccountPermission.m */,
+				9ACB940120BEDEBE00E24CEF /* EOSAccountPermissionWeight.h */,
+				9ACB940220BEDEBE00E24CEF /* EOSAccountPermissionWeight.m */,
+				9ACB940320BEDEBE00E24CEF /* EOSAction.h */,
+				9ACB940420BEDEBE00E24CEF /* EOSAction.m */,
+				9ACB940520BEDEBE00E24CEF /* EOSAddress.h */,
+				9ACB940620BEDEBE00E24CEF /* EOSAddress.m */,
+				9ACB940720BEDEBE00E24CEF /* EOSAuthority.h */,
+				9ACB940820BEDEBE00E24CEF /* EOSAuthority.m */,
+				9ACB940920BEDEBE00E24CEF /* EOSKeyPermissionWeight.h */,
+				9ACB940A20BEDEBE00E24CEF /* EOSKeyPermissionWeight.m */,
+				9ACB940B20BEDEBE00E24CEF /* EOSTransaction.h */,
+				9ACB940C20BEDEBE00E24CEF /* EOSTransaction.m */,
+				9ACB940D20BEDEBE00E24CEF /* EOSWaitWeight.h */,
+				9ACB940E20BEDEBE00E24CEF /* EOSWaitWeight.m */,
+			);
+			path = EOS;
+			sourceTree = "<group>";
+		};
+		9ACB940F20BEDEBE00E24CEF /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				9ACB941020BEDEBE00E24CEF /* EOSAsset.h */,
+				9ACB941120BEDEBE00E24CEF /* EOSAsset.m */,
+				9ACB941220BEDEBE00E24CEF /* EOSBuyRamMessageData.h */,
+				9ACB941320BEDEBE00E24CEF /* EOSBuyRamMessageData.m */,
+				9ACB941420BEDEBE00E24CEF /* EOSByteMessageData.h */,
+				9ACB941520BEDEBE00E24CEF /* EOSByteMessageData.m */,
+				9ACB941620BEDEBE00E24CEF /* EOSDelegatebwMessageData.h */,
+				9ACB941720BEDEBE00E24CEF /* EOSDelegatebwMessageData.m */,
+				9ACB941820BEDEBE00E24CEF /* EOSMessageData.h */,
+				9ACB941920BEDEBE00E24CEF /* EOSNewMessageData.h */,
+				9ACB941A20BEDEBE00E24CEF /* EOSNewMessageData.m */,
+				9ACB941B20BEDEBE00E24CEF /* EOSRegProxyMessageData.h */,
+				9ACB941C20BEDEBE00E24CEF /* EOSRegProxyMessageData.m */,
+				9ACB941D20BEDEBE00E24CEF /* EOSSellRamMessageData.h */,
+				9ACB941E20BEDEBE00E24CEF /* EOSSellRamMessageData.m */,
+				9ACB941F20BEDEBE00E24CEF /* EOSTxMessageData.h */,
+				9ACB942020BEDEBE00E24CEF /* EOSTxMessageData.m */,
+				9ACB942120BEDEBE00E24CEF /* EOSUnDelegatebwMessageData.h */,
+				9ACB942220BEDEBE00E24CEF /* EOSUnDelegatebwMessageData.m */,
+				9ACB942320BEDEBE00E24CEF /* EOSVoteProducerMessageData.h */,
+				9ACB942420BEDEBE00E24CEF /* EOSVoteProducerMessageData.m */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9ACB933220BED1C400E24CEF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ACB945020BEDF0100E24CEF /* CoinFamily.h in Headers */,
+				9ACB93B320BED3B700E24CEF /* NSMutableData+Extend.h in Headers */,
+				9ACB93B120BED3B700E24CEF /* NSData+Hash.h in Headers */,
+				9ACB93B520BED3B700E24CEF /* NSString+Base58.h in Headers */,
+				9ACB93AF20BED3B700E24CEF /* NSData+Extend.h in Headers */,
+				9ACB944F20BEDF0100E24CEF /* MnemonicCode.h in Headers */,
+				9ACB939E20BED36E00E24CEF /* ChildNumber.h in Headers */,
+				9ACB938420BED28100E24CEF /* num_gmp_impl.h in Headers */,
+				9ACB942920BEDEBE00E24CEF /* EOSAccountPermissionWeight.h in Headers */,
+				9ACB939F20BED36E00E24CEF /* DeterministicKey.h in Headers */,
+				9ACB939A20BED36E00E24CEF /* ECKeySignature.h in Headers */,
+				9ACB93A020BED36E00E24CEF /* ECKey.h in Headers */,
+				9ACB942B20BEDEBE00E24CEF /* EOSAction.h in Headers */,
+				9ACB93DE20BED82A00E24CEF /* EosECKey.h in Headers */,
+				9ACB93AE20BED3B700E24CEF /* Categories.h in Headers */,
+				9ACB943F20BEDEBE00E24CEF /* EOSMessageData.h in Headers */,
+				9ACB944020BEDEBE00E24CEF /* EOSNewMessageData.h in Headers */,
+				9ACB943920BEDEBE00E24CEF /* EOSBuyRamMessageData.h in Headers */,
+				9ACB942F20BEDEBE00E24CEF /* EOSAuthority.h in Headers */,
+				9ACB944A20BEDEBE00E24CEF /* EOSVoteProducerMessageData.h in Headers */,
+				9ACB944820BEDEBE00E24CEF /* EOSUnDelegatebwMessageData.h in Headers */,
+				9ACB943520BEDEBE00E24CEF /* EOSWaitWeight.h in Headers */,
+				9ACB942D20BEDEBE00E24CEF /* EOSAddress.h in Headers */,
+				9ACB943D20BEDEBE00E24CEF /* EOSDelegatebwMessageData.h in Headers */,
+				9ACB93DC20BED82A00E24CEF /* EosDeterministicKey.h in Headers */,
+				9ACB942720BEDEBE00E24CEF /* EOSAccountPermission.h in Headers */,
+				9ACB944420BEDEBE00E24CEF /* EOSSellRamMessageData.h in Headers */,
+				9ACB944220BEDEBE00E24CEF /* EOSRegProxyMessageData.h in Headers */,
+				9ACB942520BEDEBE00E24CEF /* EOSAccountName.h in Headers */,
+				9ACB943720BEDEBE00E24CEF /* EOSAsset.h in Headers */,
+				9ACB943320BEDEBE00E24CEF /* EOSTransaction.h in Headers */,
+				9ACB943B20BEDEBE00E24CEF /* EOSByteMessageData.h in Headers */,
+				9ACB943120BEDEBE00E24CEF /* EOSKeyPermissionWeight.h in Headers */,
+				9ACB944620BEDEBE00E24CEF /* EOSTxMessageData.h in Headers */,
+				9ACB936E20BED28100E24CEF /* ecdsa_impl.h in Headers */,
+				9ACB937320BED28100E24CEF /* ecmult_gen.h in Headers */,
+				9ACB93F420BEDE2B00E24CEF /* ecdsa.h in Headers */,
+				9ACB936C20BED28100E24CEF /* ecdh.h in Headers */,
+				9ACB938F20BED28100E24CEF /* util.h in Headers */,
+				9ACB936B20BED28100E24CEF /* borromean_impl.h in Headers */,
+				9ACB93E320BEDC6B00E24CEF /* bignum.h in Headers */,
+				9ACB93D220BED4FB00E24CEF /* hasher.h in Headers */,
+				9ACB937520BED28100E24CEF /* ecmult_impl.h in Headers */,
+				9ACB936D20BED28100E24CEF /* ecdh_impl.h in Headers */,
+				9ACB937620BED28100E24CEF /* field.h in Headers */,
+				9ACB937B20BED28100E24CEF /* field_5x52_int128_impl.h in Headers */,
+				9ACB937F20BED28100E24CEF /* hash.h in Headers */,
+				9ACB938B20BED28100E24CEF /* scalar_impl.h in Headers */,
+				9ACB937A20BED28100E24CEF /* field_5x52_impl.h in Headers */,
+				9ACB93B720BED3B700E24CEF /* SHAHash.h in Headers */,
+				9ACB938720BED28100E24CEF /* rangeproof_impl.h in Headers */,
+				9ACB945920BEDF5E00E24CEF /* bip39.h in Headers */,
+				9ACB937720BED28100E24CEF /* field_10x26.h in Headers */,
+				9ACB945420BEDF3700E24CEF /* pbkdf2.h in Headers */,
+				9ACB933A20BED1C400E24CEF /* eosio.h in Headers */,
+				9ACB938520BED28100E24CEF /* num_impl.h in Headers */,
+				9ACB937920BED28100E24CEF /* field_5x52.h in Headers */,
+				9ACB937E20BED28100E24CEF /* group_impl.h in Headers */,
+				9ACB93E620BEDC7C00E24CEF /* BigNumber.h in Headers */,
+				9ACB937220BED28100E24CEF /* ecmult.h in Headers */,
+				9ACB938220BED28100E24CEF /* num.h in Headers */,
+				9ACB938820BED28100E24CEF /* scalar.h in Headers */,
+				9ACB93C020BED44600E24CEF /* options.h in Headers */,
+				9ACB938020BED28100E24CEF /* hash_impl.h in Headers */,
+				9ACB936F20BED28100E24CEF /* ecdsa_zkp.h in Headers */,
+				9ACB938120BED28100E24CEF /* libsecp256k1-config.h in Headers */,
+				9ACB936A20BED28100E24CEF /* borromean.h in Headers */,
+				9ACB93EE20BEDD9800E24CEF /* secp256k1.h in Headers */,
+				9ACB937420BED28100E24CEF /* ecmult_gen_impl.h in Headers */,
+				9ACB93C520BED44600E24CEF /* hmac.h in Headers */,
+				9ACB93D620BED50900E24CEF /* blake256.h in Headers */,
+				9ACB937D20BED28100E24CEF /* group.h in Headers */,
+				9ACB938320BED28100E24CEF /* num_gmp.h in Headers */,
+				9ACB93C620BED44600E24CEF /* memzero.h in Headers */,
+				9ACB93F820BEDE4D00E24CEF /* rand.h in Headers */,
+				9ACB938A20BED28100E24CEF /* scalar_8x32_impl.h in Headers */,
+				9ACB937C20BED28100E24CEF /* field_impl.h in Headers */,
+				9ACB93C220BED44600E24CEF /* sha2.h in Headers */,
+				9ACB937820BED28100E24CEF /* field_10x26_impl.h in Headers */,
+				9ACB93CB20BED4E600E24CEF /* base58.h in Headers */,
+				9ACB936920BED28100E24CEF /* bench.h in Headers */,
+				9ACB937120BED28100E24CEF /* eckey_zkp.h in Headers */,
+				9ACB93FB20BEDE6C00E24CEF /* rfc6979.h in Headers */,
+				9ACB938920BED28100E24CEF /* scalar_8x32.h in Headers */,
+				9ACB938620BED28100E24CEF /* rangeproof.h in Headers */,
+				9ACB93CE20BED4E600E24CEF /* ripemd160.h in Headers */,
+				9ACB938D20BED28100E24CEF /* secp256k1_zkp.h in Headers */,
+				9ACB937020BED28100E24CEF /* eckey_impl.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		9A1721E820BF894500769204 /* eosioTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A1721F120BF894500769204 /* Build configuration list for PBXNativeTarget "eosioTests" */;
+			buildPhases = (
+				9A1721E520BF894500769204 /* Sources */,
+				9A1721E620BF894500769204 /* Frameworks */,
+				9A1721E720BF894500769204 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A1721F020BF894500769204 /* PBXTargetDependency */,
+			);
+			name = eosioTests;
+			productName = eosioTests;
+			productReference = 9A1721E920BF894500769204 /* eosioTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9ACB933420BED1C400E24CEF /* eosio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9ACB933D20BED1C400E24CEF /* Build configuration list for PBXNativeTarget "eosio" */;
+			buildPhases = (
+				9ACB933020BED1C400E24CEF /* Sources */,
+				9ACB933120BED1C400E24CEF /* Frameworks */,
+				9ACB933220BED1C400E24CEF /* Headers */,
+				9ACB933320BED1C400E24CEF /* Resources */,
+				9ACFE8A220BEE23C00879677 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = eosio;
+			productName = eosio;
+			productReference = 9ACB933520BED1C400E24CEF /* eosio.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9ACB932C20BED1C400E24CEF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "潘孝钦";
+				TargetAttributes = {
+					9A1721E820BF894500769204 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					9ACB933420BED1C400E24CEF = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 9ACB932F20BED1C400E24CEF /* Build configuration list for PBXProject "eosio" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9ACB932B20BED1C400E24CEF;
+			productRefGroup = 9ACB933620BED1C400E24CEF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9ACB933420BED1C400E24CEF /* eosio */,
+				9A1721E820BF894500769204 /* eosioTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9A1721E720BF894500769204 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9ACB933320BED1C400E24CEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ACB93F120BEDDD800E24CEF /* secp256k1.table in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9ACFE8A220BEE23C00879677 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9A1721E520BF894500769204 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A1721EC20BF894500769204 /* eosioTests.m in Sources */,
+				9A1721F720BF8CE600769204 /* PrivateKeyTest.m in Sources */,
+				9A1721F920BFA52900769204 /* TransactionTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9ACB933020BED1C400E24CEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ACB943620BEDEBE00E24CEF /* EOSWaitWeight.m in Sources */,
+				9ACB944320BEDEBE00E24CEF /* EOSRegProxyMessageData.m in Sources */,
+				9ACB93F520BEDE2B00E24CEF /* ecdsa.c in Sources */,
+				9ACB93C420BED44600E24CEF /* hmac.c in Sources */,
+				9ACB942620BEDEBE00E24CEF /* EOSAccountName.m in Sources */,
+				9ACB93E720BEDC7C00E24CEF /* BigNumber.m in Sources */,
+				9ACB93B020BED3B700E24CEF /* NSData+Extend.m in Sources */,
+				9ACB942A20BEDEBE00E24CEF /* EOSAccountPermissionWeight.m in Sources */,
+				9ACB93F920BEDE4D00E24CEF /* rand.c in Sources */,
+				9ACB93C120BED44600E24CEF /* sha2.c in Sources */,
+				9ACB93CC20BED4E600E24CEF /* base58.c in Sources */,
+				9ACB93D120BED4FB00E24CEF /* hasher.c in Sources */,
+				9ACB943A20BEDEBE00E24CEF /* EOSBuyRamMessageData.m in Sources */,
+				9ACB93B420BED3B700E24CEF /* NSMutableData+Extend.m in Sources */,
+				9ACB943020BEDEBE00E24CEF /* EOSAuthority.m in Sources */,
+				9ACB93B820BED3B700E24CEF /* SHAHash.m in Sources */,
+				9ACB944520BEDEBE00E24CEF /* EOSSellRamMessageData.m in Sources */,
+				9ACB93D520BED50900E24CEF /* blake256.c in Sources */,
+				9ACB939B20BED36E00E24CEF /* ECKeySignature.m in Sources */,
+				9ACB943220BEDEBE00E24CEF /* EOSKeyPermissionWeight.m in Sources */,
+				9ACB93B620BED3B700E24CEF /* NSString+Base58.m in Sources */,
+				9ACB943820BEDEBE00E24CEF /* EOSAsset.m in Sources */,
+				9ACB945120BEDF0100E24CEF /* MnemonicCode.m in Sources */,
+				9ACB93B220BED3B700E24CEF /* NSData+Hash.m in Sources */,
+				9ACB943C20BEDEBE00E24CEF /* EOSByteMessageData.m in Sources */,
+				9ACB944920BEDEBE00E24CEF /* EOSUnDelegatebwMessageData.m in Sources */,
+				9ACB93CD20BED4E600E24CEF /* ripemd160.c in Sources */,
+				9ACB945520BEDF3700E24CEF /* pbkdf2.c in Sources */,
+				9ACB942820BEDEBE00E24CEF /* EOSAccountPermission.m in Sources */,
+				9ACB93DD20BED82A00E24CEF /* EosDeterministicKey.m in Sources */,
+				9ACB939C20BED36E00E24CEF /* ChildNumber.m in Sources */,
+				9ACB938C20BED28100E24CEF /* secp256k1_zkp.c in Sources */,
+				9ACB93C320BED44600E24CEF /* memzero.c in Sources */,
+				9ACB944B20BEDEBE00E24CEF /* EOSVoteProducerMessageData.m in Sources */,
+				9ACB943420BEDEBE00E24CEF /* EOSTransaction.m in Sources */,
+				9ACB939D20BED36E00E24CEF /* ECKey.m in Sources */,
+				9ACB942C20BEDEBE00E24CEF /* EOSAction.m in Sources */,
+				9ACB93DF20BED82A00E24CEF /* EosECKey.m in Sources */,
+				9ACB93EF20BEDD9800E24CEF /* secp256k1.c in Sources */,
+				9ACB945820BEDF5E00E24CEF /* bip39.c in Sources */,
+				9ACB944720BEDEBE00E24CEF /* EOSTxMessageData.m in Sources */,
+				9ACB93A120BED36E00E24CEF /* DeterministicKey.m in Sources */,
+				9ACB944120BEDEBE00E24CEF /* EOSNewMessageData.m in Sources */,
+				9ACB93E220BEDC6B00E24CEF /* bignum.c in Sources */,
+				9ACB943E20BEDEBE00E24CEF /* EOSDelegatebwMessageData.m in Sources */,
+				9ACB942E20BEDEBE00E24CEF /* EOSAddress.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9A1721F020BF894500769204 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9ACB933420BED1C400E24CEF /* eosio */;
+			targetProxy = 9A1721EF20BF894500769204 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9A1721F220BF894500769204 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5473DVQJ37;
+				INFOPLIST_FILE = eosioTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = bepal.eosioTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WARNING_CFLAGS = "-Wno-strict-prototypes";
+			};
+			name = Debug;
+		};
+		9A1721F320BF894500769204 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5473DVQJ37;
+				INFOPLIST_FILE = eosioTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = bepal.eosioTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WARNING_CFLAGS = "-Wno-strict-prototypes";
+			};
+			name = Release;
+		};
+		9ACB933B20BED1C400E24CEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9ACB933C20BED1C400E24CEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9ACB933E20BED1C400E24CEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 5473DVQJ37;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = eosio/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = bepal.eosio;
+				PRODUCT_NAME = eosio;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
+				VALID_ARCHS = "x86_64 arm64";
+				WARNING_CFLAGS = (
+					"-Wno-shorten-64-to-32",
+					"-Wno-conditional-uninitialized",
+					"-Wno-unused-function",
+					"-Wno-incomplete-implementation",
+					"-Wno-strict-prototypes",
+					"-Wno-implicit-function-declaration",
+					"-Wno-incompatible-pointer-types-discards-qualifiers",
+				);
+			};
+			name = Debug;
+		};
+		9ACB933F20BED1C400E24CEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 5473DVQJ37;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = eosio/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = bepal.eosio;
+				PRODUCT_NAME = eosio;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
+				VALID_ARCHS = "x86_64 arm64";
+				WARNING_CFLAGS = (
+					"-Wno-shorten-64-to-32",
+					"-Wno-conditional-uninitialized",
+					"-Wno-unused-function",
+					"-Wno-incomplete-implementation",
+					"-Wno-strict-prototypes",
+					"-Wno-implicit-function-declaration",
+					"-Wno-incompatible-pointer-types-discards-qualifiers",
+				);
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9A1721F120BF894500769204 /* Build configuration list for PBXNativeTarget "eosioTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A1721F220BF894500769204 /* Debug */,
+				9A1721F320BF894500769204 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9ACB932F20BED1C400E24CEF /* Build configuration list for PBXProject "eosio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9ACB933B20BED1C400E24CEF /* Debug */,
+				9ACB933C20BED1C400E24CEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9ACB933D20BED1C400E24CEF /* Build configuration list for PBXNativeTarget "eosio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9ACB933E20BED1C400E24CEF /* Debug */,
+				9ACB933F20BED1C400E24CEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9ACB932C20BED1C400E24CEF /* Project object */;
+}
