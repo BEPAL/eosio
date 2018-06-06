@@ -305,7 +305,9 @@
     // [3] content of the action of the account party
     EOSRegProxyMessageData *mdata = [EOSRegProxyMessageData new];
     mdata.Proxy = [[EOSAccountName alloc] initWithName:sendfrom];
-    mdata.isProxy = true;//反代理为false
+    // set proxy  `isProxy = true`
+    // off set proxy  `isProxy = false`
+    mdata.isProxy = true;
     message.Data = mdata;
     
     // [4] sign action
@@ -339,10 +341,10 @@
     
     NSString *sendfrom = @"bepal1";
     NSString *sendto = @"bepal2";
-    ////
-    // if proxy isnull, cancel the proxy.
+    // If the voting is conducted on behalf of others,
+    // please fill in the account name of the agent here.
+    // If the voting is conducted on an individual,  proxy = ""
     NSString *proxy = @"bepal3";
-    ////
     NSString *runtoken = @"eosio";
     NSString *tokenfun = @"voteproducer";
     
