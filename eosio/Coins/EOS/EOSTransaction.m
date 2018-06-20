@@ -47,7 +47,7 @@
 + (void)sortAccountName:(NSMutableArray<EOSAccountName*>*)accountNames {
     for (int i = accountNames.count - 1; i > 0; --i) {
         for (int j = 0; j < i; ++j) {
-            if (accountNames[j + 1].AccountValue > accountNames[j].AccountValue) {
+            if (accountNames[j + 1].AccountValue < accountNames[j].AccountValue) {
                 EOSAccountName *temp = accountNames[j];
                 accountNames[j] = accountNames[j + 1];
                 accountNames[j + 1] = temp;

@@ -40,7 +40,7 @@
     NSData *masterPriKey = [SHAHash Hmac512:[@"Bitcoin seed" dataUsingEncoding:NSUTF8StringEncoding] Data:seed];
     
     // generate hd_key object
-    self = [super initWithPri:[masterPriKey subdataWithRange:NSMakeRange(0, 32)] Pub:nil Code:[masterPriKey subdataWithRange:NSMakeRange(32, 32)]];
+    self = [self initWithPri:[masterPriKey subdataWithRange:NSMakeRange(0, 32)] Pub:nil Code:[masterPriKey subdataWithRange:NSMakeRange(32, 32)]];
     
     return self;
 }
