@@ -72,8 +72,8 @@
     transaction.DelaySec = 0;
     transaction.Expiration = [[NSDate date] timeIntervalSince1970] + 60 * 60;
     
-    NSString *sendfrom = @"bepal1";
-    NSString *sendto = @"bepal2";
+    NSString *sendfrom = @"bepal1|user_account"; // please write user account
+    NSString *sendto = @"bepal2|user_account"; // please write user account
     NSString *runtoken = @"eosio.token";
     NSString *tokenfun = @"transfer";
     
@@ -122,8 +122,8 @@
     transaction.DelaySec = 0;
     transaction.Expiration = [[NSDate date] timeIntervalSince1970] + 60 * 60;
     
-    NSString *sendfrom = @"bepal1";
-    NSString *sendto = @"bepal1";
+    NSString *sendfrom = @"bepal1|user_account"; // please write user account
+    NSString *sendto = @"bepal2|user_account"; // please write user account
     NSString *runtoken = @"eosio";
     NSString *tokenfun = @"buyram";
     
@@ -171,7 +171,7 @@
     transaction.DelaySec = 0;
     transaction.Expiration = [[NSDate date] timeIntervalSince1970] + 60 * 60;
     
-    NSString *sendfrom = @"bepal1";
+    NSString *sendfrom = @"bepal1|user_account"; // please write user account
     NSString *runtoken = @"eosio";
     NSString *tokenfun = @"sellram";
     
@@ -218,7 +218,7 @@
     transaction.DelaySec = 0;
     transaction.Expiration = [[NSDate date] timeIntervalSince1970] + 60 * 60;
     
-    NSString *sendfrom = @"bepal1";
+    NSString *sendfrom = @"bepal1|user_account"; // please write user account
     NSString *runtoken = @"eosio";
     NSString *tokenfun = @"delegatebw";
     
@@ -269,7 +269,7 @@
     transaction.Expiration = [[NSDate date] timeIntervalSince1970] + 60 * 60;
     
     // [2] determine the type of transaction
-    NSString *sendfrom = @"bepal1";
+    NSString *sendfrom = @"bepal1|user_account"; // please write user account
     NSString *runtoken = @"eosio";
     NSString *tokenfun = @"undelegatebw";
     
@@ -317,7 +317,7 @@
     transaction.DelaySec = 0;
     transaction.Expiration = [[NSDate date] timeIntervalSince1970] + 60 * 60;
     
-    NSString *sendfrom = @"bepal1";
+    NSString *sendfrom = @"bepal1|user_account"; // please write user account
     NSString *runtoken = @"eosio";
     NSString *tokenfun = @"regproxy";
     
@@ -366,12 +366,12 @@
     transaction.DelaySec = 0;
     transaction.Expiration = [[NSDate date] timeIntervalSince1970] + 60 * 60;
     
-    NSString *sendfrom = @"bepal1";
-    NSString *sendto = @"bepal2";
+    NSString *sendfrom = @"bepal1|user_account"; // please write user account
+    NSString *sendto = @"bepal2|user_account"; // please write user account
     // If the voting is conducted on behalf of others,
     // please fill in the account name of the agent here.
     // If the voting is conducted on an individual,  proxy = ""
-    NSString *proxy = @"bepal3";
+    NSString *proxy = @"bepal3|user_account"; // please write user account
     NSString *runtoken = @"eosio";
     NSString *tokenfun = @"voteproducer";
     
