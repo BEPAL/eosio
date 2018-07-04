@@ -88,7 +88,7 @@
     EOSTxMessageData *mdata = [EOSTxMessageData new];
     mdata.From = [[EOSAccountName alloc] initWithName:sendfrom];
     mdata.To = [[EOSAccountName alloc] initWithName:sendto];
-    mdata.Amount = [[EOSAsset alloc] initWithString:@"1.0000 SYS"];
+    mdata.Amount = [[EOSAsset alloc] initWithString:@"1.0000 EOS"];
     message.Data = mdata;
     
     // [4] sign action
@@ -138,7 +138,7 @@
     EOSBuyRamMessageData *mdata = [EOSBuyRamMessageData new];
     mdata.Payer = [[EOSAccountName alloc] initWithName:sendfrom];
     mdata.Receiver = [[EOSAccountName alloc] initWithName:sendto];
-    mdata.Quant = [[EOSAsset alloc] initWithString:@"1.0000 SYS"];
+    mdata.Quant = [[EOSAsset alloc] initWithString:@"1.0000 EOS"];
     message.Data = mdata;
     
     // [4] sign action
@@ -233,8 +233,8 @@
     EOSDelegatebwMessageData *mdata = [EOSDelegatebwMessageData new];
     mdata.From = [[EOSAccountName alloc] initWithName:sendfrom];
     mdata.Receiver = [[EOSAccountName alloc] initWithName:sendfrom];
-    mdata.StakeNetQuantity = [[EOSAsset alloc] initWithString:@"1.0000 SYS"];
-    mdata.StakeCpuQuantity = [[EOSAsset alloc] initWithString:@"1.0000 SYS"];
+    mdata.StakeNetQuantity = [[EOSAsset alloc] initWithString:@"1.0000 EOS"];
+    mdata.StakeCpuQuantity = [[EOSAsset alloc] initWithString:@"1.0000 EOS"];
     mdata.Transfer = 0;
     message.Data = mdata;
     
@@ -283,8 +283,8 @@
     EOSUnDelegatebwMessageData *mdata = [EOSUnDelegatebwMessageData new];
     mdata.From = [[EOSAccountName alloc] initWithName:sendfrom];
     mdata.Receiver = [[EOSAccountName alloc] initWithName:sendfrom];
-    mdata.StakeNetQuantity = [[EOSAsset alloc] initWithString:@"1.0000 SYS"];
-    mdata.StakeCpuQuantity = [[EOSAsset alloc] initWithString:@"1.0000 SYS"];
+    mdata.StakeNetQuantity = [[EOSAsset alloc] initWithString:@"1.0000 EOS"];
+    mdata.StakeCpuQuantity = [[EOSAsset alloc] initWithString:@"1.0000 EOS"];
     message.Data = mdata;
     
     // [4] sign action
