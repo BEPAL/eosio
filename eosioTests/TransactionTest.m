@@ -56,8 +56,9 @@
 
 /// EOSIO transaction content packaging use cases
 - (void)testTx {
-    int block_num = 0;
-    int ref_block_prefix = 0;
+    int block_num = 0;   // The most recent irreversible block # last_irreversible_block_num
+    int ref_block_prefix = 0; // encode last_irreversible_block_id # last_irreversible_block_id[8-16]
+    // ref https://github.com/EOSIO/eos/blob/master/libraries/chain/transaction.cpp set_reference_block function
     
     /// generate transaction
     // [1] make block base info
@@ -106,8 +107,9 @@
 
 
 - (void)testBuyRam {
-    int block_num = 0;
-    int ref_block_prefix = 0;
+    int block_num = 0;   // The most recent irreversible block # last_irreversible_block_num
+    int ref_block_prefix = 0; // encode last_irreversible_block_id # last_irreversible_block_id[8-16]
+    // ref https://github.com/EOSIO/eos/blob/master/libraries/chain/transaction.cpp set_reference_block function
     
     // [1] make block base info
     EOSTransaction *transaction = [EOSTransaction new];
@@ -154,8 +156,9 @@
 }
 
 - (void)testSellRam {
-    int block_num = 0;
-    int ref_block_prefix = 0;
+    int block_num = 0;   // The most recent irreversible block # last_irreversible_block_num
+    int ref_block_prefix = 0; // encode last_irreversible_block_id # last_irreversible_block_id[8-16]
+    // ref https://github.com/EOSIO/eos/blob/master/libraries/chain/transaction.cpp set_reference_block function
     
     // [1] make block base info
     EOSTransaction *transaction = [EOSTransaction new];
@@ -200,8 +203,9 @@
 }
 
 - (void)testDelegatebw {
-    int block_num = 0;
-    int ref_block_prefix = 0;
+    int block_num = 0;   // The most recent irreversible block # last_irreversible_block_num
+    int ref_block_prefix = 0; // encode last_irreversible_block_id # last_irreversible_block_id[8-16]
+    // ref https://github.com/EOSIO/eos/blob/master/libraries/chain/transaction.cpp set_reference_block function
     
     // [1] make block base info
     EOSTransaction *transaction = [EOSTransaction new];
@@ -249,8 +253,9 @@
 }
 
 - (void)testUnDelegatebw {
-    int block_num = 0;
-    int ref_block_prefix = 0;
+    int block_num = 0;   // The most recent irreversible block # last_irreversible_block_num
+    int ref_block_prefix = 0; // encode last_irreversible_block_id # last_irreversible_block_id[8-16]
+    // ref https://github.com/EOSIO/eos/blob/master/libraries/chain/transaction.cpp set_reference_block function
     
     // [1] make block base info
     EOSTransaction *transaction = [EOSTransaction new];
@@ -297,8 +302,9 @@
 }
 
 - (void)testRegProxy {
-    int block_num = 0;
-    int ref_block_prefix = 0;
+    int block_num = 0;   // The most recent irreversible block # last_irreversible_block_num
+    int ref_block_prefix = 0; // encode last_irreversible_block_id # last_irreversible_block_id[8-16]
+    // ref https://github.com/EOSIO/eos/blob/master/libraries/chain/transaction.cpp set_reference_block function
     
     // [1] make block base info
     EOSTransaction *transaction = [EOSTransaction new];
@@ -345,8 +351,9 @@
 }
 
 - (void)testVote {
-    int block_num = 0;
-    int ref_block_prefix = 0;
+    int block_num = 0;   // The most recent irreversible block # last_irreversible_block_num
+    int ref_block_prefix = 0; // encode last_irreversible_block_id # last_irreversible_block_id[8-16]
+    // ref https://github.com/EOSIO/eos/blob/master/libraries/chain/transaction.cpp set_reference_block function
     
     // [1] make block base info
     EOSTransaction *transaction = [EOSTransaction new];
