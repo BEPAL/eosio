@@ -46,7 +46,8 @@
     
     privateKey = [[EosECKey alloc] initWithPriKey:@"d0b864d15f3f57361317cee05beda29bdb39ae9a4a239d6f720317346751ca81".hexToData];
     publicKey = [[EosECKey alloc] initWithPubKey:@"030e34f21e46cf87f960ed24b1cedae723cd3eb9ad1c249bc7f2e1d40af928aaaf".hexToData];
-    ChainID = @"706a7ddd808de9fc2b8879904f3b392256c83104c1d544b38302cc07d9fca477".hexToData;
+    // rpc service localhost:8080/v1/chain/get_info  -> chain_id
+    ChainID = @"aca376f206b8fc25a6ed44dbdc66547c36c6c33e3a119ffbeaef943642f0e906".hexToData;
 }
 
 - (void)tearDown {
