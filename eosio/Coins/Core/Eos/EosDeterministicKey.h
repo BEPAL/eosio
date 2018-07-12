@@ -26,6 +26,11 @@
 */
 #import "DeterministicKey.h"
 
+/**
+ * @note `Derive` & `privChild` & `pubChild` fucntion
+ *     thread-unsafe
+*/
+
 @interface EosDeterministicKey : DeterministicKey
 
 @end
