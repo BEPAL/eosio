@@ -36,6 +36,12 @@
 @property (strong, nonatomic) EOSAccountName *Receiver;
 @property (strong, nonatomic) EOSAsset *StakeNetQuantity;
 @property (strong, nonatomic) EOSAsset *StakeCpuQuantity;
+
+/**
+ @notes: 0: the authorizer cannot undelegatebw.
+         1: the authorizer can undelegatebw.
+         It is suggested to fill in 1
+ */
 @property (assign, nonatomic) uint64_t Transfer;
 
 @end

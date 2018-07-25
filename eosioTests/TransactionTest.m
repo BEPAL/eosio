@@ -235,7 +235,10 @@
     mdata.Receiver = [[EOSAccountName alloc] initWithName:sendfrom];
     mdata.StakeNetQuantity = [[EOSAsset alloc] initWithString:@"1.0000 EOS"];
     mdata.StakeCpuQuantity = [[EOSAsset alloc] initWithString:@"1.0000 EOS"];
-    mdata.Transfer = 0;
+    // @notes: 0: the authorizer cannot undelegatebw.
+    //         1: the authorizer can undelegatebw.
+    //         It is suggested to fill in 1
+    mdata.Transfer = 1;
     message.Data = mdata;
     
     // [4] sign action
