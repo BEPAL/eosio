@@ -1,3 +1,9 @@
+# Notice
+
+The project is moved to a new repository
+
+[bepalcore-oc](https://github.com/Bepal/bepalcore-oc)
+
 # eosio
 
 The project was spun off from the bepal hardware wallet.
